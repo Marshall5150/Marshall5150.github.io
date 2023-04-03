@@ -1,6 +1,7 @@
-const navbarDropdownBtn = document.querySelector(".js-dropdown-btn");
-const sectionTitle = document.querySelector(".js-section-title");
 const links = document.querySelectorAll(".navbar__link");
+const navbarDropdownBtn = document.querySelector(".js-dropdown-btn");
+const progressBar = document.querySelector(".js-progress-bar")
+const sectionTitle = document.querySelector(".js-section-title");
 const sections = document.querySelectorAll(".js-jump-links-sections .section");
 const sectionTitles = document.querySelectorAll(".js-jump-links-sections .section h2");
 let isHidden = true;
@@ -27,7 +28,7 @@ function handleScroll() {
     document.documentElement.clientHeight;
   const scrolled = (winScroll / height) * 100;
 
-  document.getElementById("progress-bar").value = scrolled;
+  progressBar.value = scrolled;
 }
 
 function changeLinkState() {
