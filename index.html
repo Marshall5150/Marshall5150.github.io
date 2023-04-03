@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="sass/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <style></style>
+  </head>
+  <body>
+    <div class="section bg-navy">
+      <h1>Section above jump links</h1>
+    </div>
+    <div class="js-jump-links-sections">
+      <nav class="navbar">
+        <div class="flex">
+          <h2 class="js-section-title">Section One</h2>
+          <div>
+            <button class="btn js-dropdown-btn" aria-expanded="false">
+              Show
+            </button>
+            <ul class="navbar__links js-dropdown-menu">
+              <li class="navbar__list-item">
+                <a
+                  href="#section1"
+                  onclick="toggleDropdown()"
+                  class="navbar__link"
+                  >Section One</a
+                >
+              </li>
+              <li class="navbar__list-item">
+                <a
+                  href="#section2"
+                  onclick="toggleDropdown()"
+                  class="navbar__link"
+                  >Section Two</a
+                >
+              </li>
+              <li class="navbar__list-item">
+                <a
+                  href="#section3"
+                  onclick="toggleDropdown()"
+                  class="navbar__link"
+                  >Section Three</a
+                >
+              </li>
+              <li class="navbar__list-item">
+                <a
+                  href="#section4"
+                  onclick="toggleDropdown()"
+                  class="navbar__link"
+                  >Section Four</a
+                >
+              </li>
+              <li class="navbar__list-item">
+                <a
+                  href="#section5"
+                  onclick="toggleDropdown()"
+                  class="navbar__link"
+                  >Section Five</a
+                >
+              </li>
+              <li class="navbar__list-item">
+                <a
+                  href="#section6"
+                  onclick="toggleDropdown()"
+                  class="navbar__link"
+                  >Section Six</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <progress
+          max="100"
+          value="0"
+          class="progress-bar"
+          id="progress-bar"
+          aria-label="progress bar for current position on page"
+        ></progress>
+      </nav>
+      <section class="section bg-navy" id="section1">
+        <h2>Section One</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut
+          mauris porta, tristique augue sed, pharetra risus. Duis non mollis
+          felis. Morbi semper justo in sapien dictum vehicula. Ut ultrices ex
+          felis. Proin vel mattis ipsum. In blandit tortor elit, id aliquam
+          ligula commodo sed. Praesent lobortis scelerisque dapibus. Aliquam nec
+          felis eros. Vivamus imperdiet sem eros, at commodo sem auctor at.
+          Etiam lobortis ipsum purus, sit amet cursus eros dapibus non. Morbi
+          non eros ligula. Mauris eget accumsan nunc, eget sagittis velit.
+          Quisque feugiat metus nec dapibus imperdiet. Mauris quis magna sit
+          amet odio auctor maximus.
+        </p>
+      </section>
+      <section class="section bg-off-white" id="section2">
+        <h2>Section Two</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut
+          mauris porta, tristique augue sed, pharetra risus. Duis non mollis
+          felis. Morbi semper justo in sapien dictum vehicula. Ut ultrices ex
+          felis. Proin vel mattis ipsum. In blandit tortor elit, id aliquam
+          ligula commodo sed. Praesent lobortis scelerisque dapibus. Aliquam nec
+          felis eros. Vivamus imperdiet sem eros, at commodo sem auctor at.
+          Etiam lobortis ipsum purus, sit amet cursus eros dapibus non. Morbi
+          non eros ligula. Mauris eget accumsan nunc, eget sagittis velit.
+          Quisque feugiat metus nec dapibus imperdiet. Mauris quis magna sit
+          amet odio auctor maximus.
+        </p>
+      </section>
+      <section class="section bg-off-white" id="section3">
+        <h2>Section Three</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut
+          mauris porta, tristique augue sed, pharetra risus. Duis non mollis
+          felis. Morbi semper justo in sapien dictum vehicula. Ut ultrices ex
+          felis. Proin vel mattis ipsum. In blandit tortor elit, id aliquam
+          ligula commodo sed. Praesent lobortis scelerisque dapibus. Aliquam nec
+          felis eros. Vivamus imperdiet sem eros, at commodo sem auctor at.
+          Etiam lobortis ipsum purus, sit amet cursus eros dapibus non. Morbi
+          non eros ligula. Mauris eget accumsan nunc, eget sagittis velit.
+          Quisque feugiat metus nec dapibus imperdiet. Mauris quis magna sit
+          amet odio auctor maximus.
+        </p>
+      </section>
+      <section class="section bg-off-white" id="section4">
+        <h2>Section Four</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </section>
+      <section class="section bg-off-white" id="section5">
+        <h2>Section Five</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </section>
+      <section class="section bg-off-white" id="section6">
+        <h2>Section Six</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </section>
+    </div>
+    <footer class="section bg-navy">
+      <h2>Sections after jump links</h2>
+      <div class="section">
+        <h3>Heading</h3>
+      </div>
+      <div class="section">
+        <h3>Heading</h3>
+      </div>
+      <div class="section">
+        <h3>Heading</h3>
+      </div>
+      <div class="section">
+        <h3>Heading</h3>
+      </div>
+      <div class="section">
+        <h3>Heading</h3>
+      </div>
+      <div class="section">
+        <h3>Heading</h3>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

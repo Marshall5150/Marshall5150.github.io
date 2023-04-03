@@ -1,0 +1,56 @@
+@import "../base/_colours";
+@import "../base/_mixins";
+
+.navbar {
+  $blockClass: &;
+  background-color: $off-white;
+  padding: 1.111rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 1px 10px 4px rgba(0, 0, 0, 0.1);
+
+  &__links {
+    display: none;
+    position: absolute;
+    background-color: $off-white;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    padding: 1.111rem;
+    list-style-type: none;
+    box-shadow: 1px 10px 4px rgba(0, 0, 0, 0.1);
+    animation: growDown 300ms ease-in-out;
+    transform-origin: top center;
+
+    &.is-visible {
+      display: block;
+
+      @include for-tablet-portrait-up {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  }
+
+  &__link {
+    color: #202a44;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+
+    &:hover {
+      border-bottom: 1px solid $navy;
+    }
+
+    &.is-active {
+      color: $light-blue;
+      font-weight: bold;
+      border-bottom: 1px solid $light-blue;
+    }
+  }
+
+  &__list-item {
+    margin-bottom: 0.556rem;
+  }
+}

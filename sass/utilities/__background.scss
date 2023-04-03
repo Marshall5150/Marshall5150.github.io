@@ -1,0 +1,11 @@
+@import '../base/_colours';
+
+.bg-navy {
+    background-color: $navy;
+    color: $off-white;
+}
+
+.bg-off-white {
+    background-color: $off-white;
+    color: $navy;
+}

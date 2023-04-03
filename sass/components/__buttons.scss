@@ -1,0 +1,36 @@
+@import '../base/_colours';
+
+.btn {
+  background-color: $light-blue;
+  border: 0 solid $off-white;
+  color: $black;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  padding: 0.75rem 1.65rem;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+
+  &:after {
+    content: "";
+    position: absolute;
+    border: 1px solid $black;
+    bottom: .222rem;
+    left: .222rem;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+  }
+
+  &:hover:after {
+    bottom: .111rem;
+    left: .111rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    padding: 0.75rem 3rem;
+    font-size: 1.25rem;
+  }
+}

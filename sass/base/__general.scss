@@ -1,0 +1,43 @@
+@import "./_mixins";
+
+$font-size-h1: 2.4rem;
+$font-size-h2: 1.8rem;
+$font-size-h3: 1.4rem;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+
+  @include for-tablet-portrait-up {
+    font-size: 16px;
+  }
+
+  @include for-desktop-up {
+    font-size: 18px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 0.556rem;
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+
+h2 {
+  font-size: $font-size-h2;
+}
+
+h3 {
+  font-size: $font-size-h3;
+}
